@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Button } from '@material-ui/core';
 
+import Icon from '../UI/Icon';
+
 import m_city_logo from '../../Resources/images/logos/manchester_city_logo.png';
 
 class Header extends Component {
@@ -17,15 +19,10 @@ class Header extends Component {
         }}
       >
         <Toolbar style={{ display: 'flex' }}>
-          <div style={{ flexGrow: 1 }}>
-            <div className="header_logo">
-              <img
-                src={m_city_logo}
-                alt="Manchester City Logo"
-                style={{ height: '100%' }}
-              />
-            </div>
+          <div className="header_logo">
+            <Icon link="/" size="70" img={m_city_logo} />
           </div>
+          <div style={{ flexGrow: 1 }} />
           <Link to="/team">
             <Button color="inherit">Team</Button>
           </Link>
