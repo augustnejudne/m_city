@@ -29,6 +29,9 @@ class Header extends Component {
           <Link to="/matches">
             <Button color="inherit">Matches</Button>
           </Link>
+          <Link to="/admin">
+            <Button color="inherit">Admin</Button>
+          </Link>
         </Toolbar>
       </AppBar>
     );
